@@ -1,0 +1,54 @@
+#grid-section {
+  display: grid;
+  height: 70vh;
+  gap: 1rem;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    " box1 box1 box2 box2"
+    "box1 box1 box3 box3"
+    "box1 box1 box3 box3";
+
+  div {
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  #box1 {
+    grid-area: box1;
+    background-color: lavender;
+
+  }
+  #box2 {
+    grid-area: box2;
+    background-color: lavender;
+
+  }
+  #box3 {
+    grid-area: box3;
+    background-color: lavender;
+
+  }
+
+  .box-label {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #grid-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  #box1,
+  #box2,
+  #box3 {
+    height: 100%;
+  }
+}

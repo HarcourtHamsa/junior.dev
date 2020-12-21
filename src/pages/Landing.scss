@@ -1,0 +1,31 @@
+@import '../_variables.scss';
+header{
+  background-color: lavender;
+}
+#jumbotron {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  #label {
+    background-color: black;
+    box-shadow: 1px 2px 0px 1px royalblue;  
+    color: white;
+    padding: 5px 12px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  a {
+    @include customButton;
+    text-transform: uppercase;
+    margin-top: 3rem !important;
+  }
+}
+

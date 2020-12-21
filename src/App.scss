@@ -1,0 +1,80 @@
+@import "./_variables.scss";
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error-message{
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+
+.bg-lavenda{
+  background-color: lavender;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mt-2{
+  margin-top: 2rem;
+}
+
+.shadow{
+  box-shadow: 2px 2px 1px 8px royalblue;
+}
+
+.mb-5{
+  margin-bottom: 5rem;
+}
+
+.text-blue{
+  color: royalblue;
+}
+
+input{
+  border: 2px solid black;
+}
+
+.form-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    padding: 1rem;
+    width: 400px;
+  }
+
+  input {
+    display: block;
+    outline-color: royalblue;
+  }
+
+
+  input,
+  button {
+    box-sizing: border-box;
+    padding: 0.8rem;
+    width: 100%;
+  }
+
+  button{
+    @include customButton;
+    border: 0;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 680px) {
+  .container {
+    width: 90vw;
+  }
+}

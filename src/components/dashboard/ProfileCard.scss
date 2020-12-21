@@ -1,0 +1,37 @@
+#profile-card {
+  width: 400px;
+  background-color: whitesmoke;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    padding: 0 1rem;
+
+    h1 {
+      margin: 0;
+    }
+
+    div {
+      display: flex;
+      gap: 1rem;
+
+      .tags {
+        padding: 3px;
+        border: 2px solid royalblue;
+        color: royalblue;
+        border-radius: 1rem;
+        font-size: small;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 680px){
+    #profile-card{
+        width: 90vw;
+    }
+}
