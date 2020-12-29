@@ -7,7 +7,7 @@ function Jobs() {
     const [devJobs, setDevJobs] = useState([])
 
     useEffect(() => {
-        axios.get(" https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?search=entry")
+        axios.get(" https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?search=junior")
             .then(res => setDevJobs(res.data))
             .catch(err => console.log(err))
     }, [])

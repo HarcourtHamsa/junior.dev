@@ -8,7 +8,7 @@ function Home() {
     return (
         <>
             <Navigation />
-            <div className="container mt-2">
+            <div className="container mt-2 mb-5">
                 <h1>Welcome <span className="shadow">B</span>oss</h1>
                 <p>What would you like to do today?</p>
 
